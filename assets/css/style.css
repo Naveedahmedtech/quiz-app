@@ -1,0 +1,213 @@
+@font-face {
+    font-family: 'Barlow';
+    src: url('../fonts/barlow/Barlow-Light.ttf'),
+        url('../fonts/barlow/Barlow-Regular.ttf'),
+        url('../fonts/barlow/Barlow-Bold.ttf'),
+        url('../fonts/barlow/Barlow-Medium.ttf'),
+        url('../fonts/barlow/Barlow-Black.ttf'), ;
+    font-weight: 300, 400, 700, 500, 800;
+}
+
+:root {
+    --primary-color: #51A4FB;
+    --secodary-color: #FFFFFF;
+    --dark-color: #0058B5;
+    --danger-color: #FF0000;
+    --success-color: #02D617;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background: url('/assets/images/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    color: var(--secodary-color);
+    font-family: 'Barlow', 'Helvetica Neue', Helvetica, Arial, sans;
+}
+
+/* landing section */
+.landing-section {
+    display: block;
+}
+
+.top-heading {
+    text-align: center;
+    height: 100px;
+    padding: 2em 0;
+}
+
+.top-head {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.top-heading>p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: .2em;
+}
+
+.lets-begin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.primary-button {
+    outline: none;
+    border: none;
+    border-radius: 40px 0 0 0;
+    width: 300px;
+    height: 60px;
+    font-size: 2rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.primary-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 2px 8px rgba(0, 153, 255, 0.997);
+}
+
+
+/* question section */
+.questions-section{
+    display: none;
+}
+.main-questions-container {
+    width: 600px;
+    padding: 2em;
+}
+
+.time-counting {
+    border-right: 2px solid var(--secodary-color);
+    border-left: 2px solid var(--secodary-color);
+    border-top: 2px solid var(--secodary-color);
+    border-bottom: 0;
+    font-size: 1.5rem;
+    padding: .3em 0;
+    position: relative;
+    text-align: center;
+}
+
+/* time line */
+.time-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--secodary-color);
+}
+.questions-container {
+    margin: 3em 0;
+}
+
+.question>span {
+    font-size: 1.5rem;
+}
+
+.question>h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.options {
+    margin: 2em 0;
+    cursor: pointer;
+}
+.options:hover .option-1{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.option {
+    position: relative;
+}
+
+.option-1 {
+    background-color: var(--secodary-color);
+    color: var(--dark-color);
+    text-align: center;
+    padding: .3em 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+    transition: .3s;
+}
+
+.option-icon {
+    position: absolute;
+    top: -10px;
+    left: -20px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    height: 140%;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ;
+    font-size: 1.5rem;
+}
+
+.bg-danger {
+    background-color: var(--danger-color);
+    color: var(--secondary-color);
+}
+
+.bg-success {
+    background-color: var(--success-color);
+    color: var(--secondary-color);
+}
+
+.questions-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.questions-footer > p {
+    border: 1px solid var(--secodary-color);
+    font-size: 1.2rem;
+    padding: .5em;
+}
+.next-btn {
+    border-radius: 0;
+    width: 100px;
+    height: auto;
+    font-size: 1.3rem;
+        padding: .5em;
+}
+
+/* result section */
+.result-section{
+    display: none;
+}
+.result-section > h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+}
+.result-section > p {
+    font-size: 1.7rem;
+    margin-bottom: 1em;
+    text-align: center;;
+}
+.restart {
+    display: flex;
+    justify-content: center;
+}

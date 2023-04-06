@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <!-- external css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- * landing section -->
+    <section class="landing-section">
+      <header>
+        <div class="top-heading">
+          <h1 class="top-head">Challenge Your Understanding</h1>
+          <p>Take Our Quiz and See How Much You Really Know!</p>
+        </div>
+        <div class="lets-begin">
+          <button class="primary-button start-quiz">Let's begin</button>
+        </div>
+      </header>
+    </section>
+
+    <!-- * Questions section -->
+    <section class="questions-section lets-begin">
+      <main class="main-questions-container">
+        <div class="time-counting">
+          <p class="time">Time: <span class="count-time"></span></p>
+          <div class="time-line"></div>
+        </div>
+        <div class="questions-container">
+            <!-- coming from js -->
+          </div>
+        </div>
+        <div class="questions-footer">
+            <p> <span class="question-count"> </span> of <span class="question-length"></span> Questions</p>
+          <button class="primary-button next-btn">NEXT</button>
+        </div>
+      </main>
+    </section>
+    <!-- * Result section -->
+    <section class="result-section lets-begin">
+        <h1>Thank you for participating in our quiz</h1>
+        <p class="alert"></p>
+        <p>Your Score is: <span class="count-correct"></span> of <span class="total-questions"></span></p>
+        <div class="restart">
+            <button class="primary-button">Let's restart</button>
+        </div>
+    </section>
+
+    <!-- external js -->
+    <script type="module" src="assets/js/app.js"></script>
+  </body>
+</html>
